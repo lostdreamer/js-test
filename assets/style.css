@@ -1,0 +1,324 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+#header {
+    width: 100%;
+    height: 120px;
+    position: relative;
+    background-image: url('header.jpg');
+}
+
+#header .link {
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#header .link img {
+    width: 50px;
+}
+
+#header .header-title {
+    position: absolute;
+    font-size: 40px;
+    color: #FFF;
+    top: 20px;
+    left: 20px;
+}
+
+#header .header-subtitle {
+    position: absolute;
+    font-size: 20px;
+    color: #FFF;
+    top: 90px;
+    left: 20px;
+}
+
+
+#chips {
+    margin-top: 20px;
+    background: #f0f1ff;
+    border-radius: 10px;
+    padding: 10px;
+    float: left;
+    width: 55%;
+}
+
+#chips .block-left {
+    vertical-align: top;
+    display: inline-block;
+    width: 30%;
+}
+
+#chips .block-right {
+    display: inline-block;
+    width: 68%;
+}
+
+#chips .chip {
+    float: left;
+    background: #8e8edc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+#filters {
+    float: right;
+    width: 40%;
+}
+
+#filters::after {
+    content: "";
+    clear: right;
+    display: table;
+}
+
+#filters > .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#filters .section {
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: #CCC;
+    height: 80px;
+    margin-top: 10px;
+    padding: 0 2% 2% 2%;
+}
+
+#filters .section .title {
+    margin-top: -8px;
+    margin-left: 10px;
+}
+
+#filters .section .border-remover {
+    margin-top: -20px;
+    margin-left: -2px;
+    height: 10px;
+    width: 85px;
+    background-color: #FFF;
+}
+
+#filters .section .border-remover-wide {
+    margin-top: -20px;
+    height: 10px;
+    width: 135px;
+    background-color: #FFF;
+}
+
+#filters .section .content {
+    margin-top: 10px;
+}
+
+#filters .section label {
+    display: block;
+}
+
+
+#most-read {
+    clear: right;
+    float: right;
+    width: 40%;
+}
+
+#most-read-list {
+    padding-left: 20px;
+}
+
+#most-read-list li {
+    margin-top: 10px;
+}
+
+#most-read-list a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#launch-image {
+    clear: right;
+    float: right;
+    width: 40%;
+}
+
+#launch-image img {
+    width: 100%;
+}
+
+
+#article-list {
+    float: left;
+    width: 58%;
+}
+
+#article-list .article {
+    margin-top: 20px;
+    min-height: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#article-list .article .content {
+    width: 75%;
+    padding: 0 10px 10px 10px;
+}
+
+#article-list .article .content > a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#article-list .article .image {
+    width: 25%;
+    max-height: 150px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#article-list .article img {
+    max-height: 150px;
+    object-fit:cover;
+}
+
+#article-list .article .footer {
+    position: absolute;
+    bottom: 15px;
+}
+
+#article-list .article .news_site {
+    display: inline-block;
+}
+
+#article-list .article .news_site a {
+    background: #eee3d5;
+    padding: 5px;
+}
+
+#article-list .article .content .summary {
+    max-height: 90px;
+    overflow: hidden;
+}
+
+#article-list .article.first {
+    display: block;
+}
+
+#article-list .article.first .content .summary,
+#article-list .article.first .content .footer .news_site,
+#article-list .article.first .updated .text {
+    display: none;
+}
+
+#article-list .article.first .image {
+    width: 100%;
+    max-height: 400px;
+}
+
+#article-list .article.first .image img {
+    width: 100%;
+    max-height: 400px;
+}
+#article-list .article.first .footer {
+    position: initial;
+}
+#article-list .article.first .content a {
+    position: absolute;
+    width: calc(100% - 40px);
+    left:10px;
+    bottom:20px;
+    font-size: 2vw;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+#article-list .article.first .updated {
+    position: absolute;
+    left:10px;
+    top:10px;
+    width:300px;
+    font-size: 2em;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+
+#edit-form .row {
+    margin-top: 10px;
+    display: flex;
+}
+
+#edit-form .row:nth-child(even) {
+    background: #EEE;
+}
+
+#edit-form .row label {
+    width: 20%;
+}
+
+#edit-form .row .input {
+    width: 80%;
+}
+
+#edit-form input[type=text],
+#edit-form input[type=url],
+#edit-form input[type=date],
+#edit-form textarea {
+    width: 80%;
+    padding: 3px;
+}
+
+#edit-form textarea {
+    height: 200px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    #chips, #filters, #most-read, #article-list, #launch-image {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    #filters #sections {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    #filters #sections .section {
+        flex: 1 0;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #article-list .article.first,
+    #article-list .article.first .content a {
+        font-size: 3vw !important;
+    }
+
+
+    #article-list .article.first .content a {
+        margin-top: -70px;
+    }
+    #article-list .article.first .updated {
+        margin-top:-200px;
+    }
+}
