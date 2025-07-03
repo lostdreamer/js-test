@@ -9,7 +9,7 @@ class FormView {
 
     constructor() {
         if(!this.components['header']) {
-            this.components['header'] = new HeaderComponent(this.title, this.subTitle, null, 'index', '/assets/article-list.png');
+            this.components['header'] = new HeaderComponent(this.title, this.subTitle, null, 'index', 'assets/article-list.png');
         }
         if(!this.components['form']) {
             this.components['form'] = new FormComponent();

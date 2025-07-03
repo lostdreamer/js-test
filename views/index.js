@@ -23,7 +23,7 @@ class IndexView {
         this.launchImage = this.launchImage ?? launchImage;
         let publishers = this.getPublishers(articles);
 
-        this.components['header'] = new HeaderComponent(this.title, this.subTitle, this.endDate, 'form', '/assets/add-article.png');
+        this.components['header'] = new HeaderComponent(this.title, this.subTitle, this.endDate, 'form', 'assets/add-article.png');
 
         this.components['articles'] = new ArticleList(articles);
         this.components['most-read'] = new MostRead(articles);
