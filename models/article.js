@@ -8,7 +8,7 @@ class Article {
     static instance;
     articles = [];
 
-    static getInstance() {k
+    static getInstance() {
         if(!this.instance) {
             this.instance = new Article();
         }
